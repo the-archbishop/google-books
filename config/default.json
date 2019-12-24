@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb://gbadmin:gbPassword123@ds335668.mlab.com:35668/heroku_gnnx1vb5"
+}
