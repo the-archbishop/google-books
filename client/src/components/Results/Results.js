@@ -7,7 +7,7 @@ const Results = (props) => {
 		<Fragment>
             <div className="row">
                 <div className="col s12">
-                    <h3>Results</h3>
+                    <h4>Results</h4>
                 </div>
             </div>
             <div className="container">
