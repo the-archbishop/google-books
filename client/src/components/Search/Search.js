@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import './Searchbox.css';
+import './Search.css';
 
-const Searchbox = () => {
+const Search = () => {
 	return (
         <Fragment>
             <div className="row">
@@ -23,4 +23,4 @@ const Searchbox = () => {
 	);
 };
 
-export default Searchbox;
+export default Search;
