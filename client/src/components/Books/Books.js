@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import Jumbotron from '../Jumbotron/Jumbotron';
 import Search from '../Search/Search';
 import axios from 'axios';
+import Results from '../Results/Results';
 
 class Books extends Component {
     // Set state
@@ -17,15 +18,20 @@ class Books extends Component {
         this.setState({ searchTerms: e.target.value });
     }
 
-    handleSubmit = async (e) => {
+    // submitEvent = this.handleSubmit.bind(this);
+    handleSubmit = (e) => {
         e.preventDefault();
+
         const queryURL = 'https://www.googleapis.com/books/v1/volumes';
         let params = {
             q: this.state.searchTerms
         };
 
-        let response = await axios.get(queryURL, { params });
-        console.log(response);
+        axios.get(queryURL, { params }).then(response => {
+            this.setState({ books: [...response.data.items] });
+            console.log(this.state.books);
+        });
+        
     }
 
     // Render components
@@ -36,7 +42,8 @@ class Books extends Component {
 				<Navbar	/>
 				<Jumbotron />
 				<Search handleSearch={this.handleSearch} handleSubmit={this.handleSubmit} />
-			</div>
+                <Results books={state.books}/>
+            </div>
 		);
 	}
 }

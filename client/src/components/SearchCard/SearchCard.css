@@ -1,0 +1,17 @@
+.card-image {
+    padding: 20px;
+}
+
+#description {
+    padding-top: 20px;
+}
+
+.btn-small {
+    margin-right: 10px;
+}
+
+.small-text {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: gray;
+}
