@@ -14,7 +14,7 @@ const Results = (props) => {
                 <div className="col s12">
                 <div className="col s12 m7">
                     {
-                        // (props.books > 0) ? 
+                        (props.books.length > 0) ? 
                             props.books.map((book, i) => (
                                 <SearchCard 
                                     key={i}
@@ -26,8 +26,13 @@ const Results = (props) => {
                                     link={book.volumeInfo.infoLink}
                                 />
                         )) 
-                        // :
-                        // <span>No search results.</span>
+                        :
+                        <div class="row">
+                            <div class="card-panel">
+                                <span>No search results.
+                                </span>
+                            </div>
+                        </div>
                     }
                 </div>
                 </div>
