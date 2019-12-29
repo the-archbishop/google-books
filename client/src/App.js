@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Searchbox from './components/Searchbox/Searchbox';
+import Results from './components/Results/Results';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Jumbotron />
       <Searchbox />
+      <Results />
     </div>
   );
 }
