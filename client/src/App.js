@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Jumbotron from './components/Jumbotron/Jumbotron';
+import Searchbox from './components/Searchbox/Searchbox';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        App
-      </header>
+      <Navbar />
+      <Jumbotron />
+      <Searchbox />
     </div>
   );
 }

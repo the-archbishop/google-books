@@ -1,0 +1,10 @@
+#photo-bg {
+    padding-bottom: 150px;
+    background-image: url(../../images/low-light-books.jpg);
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
