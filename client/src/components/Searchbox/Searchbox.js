@@ -11,8 +11,9 @@ const Searchbox = () => {
                         <span class="card-title">Book Search</span>
                         <div class="input-field">
                             <i class="material-icons prefix">book</i>
-                            <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
+                            <textarea id="icon_prefix2" class="materialize-textarea text-darken-3"></textarea>
                             <label for="icon_prefix2">Book</label>
+                            <button class="btn waves-effect waves-light right indigo darken-4" type="submit" name="action">Submit</button>
                         </div>
                     </div>
                 </div>
